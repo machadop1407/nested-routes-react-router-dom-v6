@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.App {
+  text-align: center;
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(69, 62, 249);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid rgb(69, 62, 249);
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: rgb(69, 62, 249);
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(69, 62, 249);
+  background: rgb(69, 62, 249);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.products {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.productsNav {
+  width: 70%;
+  height: 80px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.productsNav a {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(69, 62, 249);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listOfProducts {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.productsList {
+  columns: 3 auto;
+  display: inline-block;
+}
+
+.productDisplay {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(233, 233, 233);
+  cursor: pointer;
+}
+* {
+  padding-top: 0;
+  margin-top: 0;
+}
