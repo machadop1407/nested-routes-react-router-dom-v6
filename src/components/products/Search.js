@@ -3,14 +3,14 @@ import React from "react";
 function Search() {
   return (
     <div>
-      <div class="wrap">
-        <div class="search">
+      <div className="wrap">
+        <div className="search">
           <input
             type="text"
-            class="searchTerm"
+            className="searchTerm"
             placeholder="What are you looking for?"
           />
-          <button type="submit" class="searchButton">
+          <button type="submit" className="searchButton">
             &#128270;
           </button>
         </div>
