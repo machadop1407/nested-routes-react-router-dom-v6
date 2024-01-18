@@ -9,6 +9,7 @@ function ListProducts() {
         {ProductsData.map((product) => {
           return (
             <div
+              key={product.id}
               className="productDisplay"
               onClick={() => {
                 navigate(`/products/${product.id}`);
